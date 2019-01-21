@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用CSS3选择器</title>
+    <style type="text/css">
+        /* 通配选择器 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 元素选择器 */
+        
+        li {
+            list-style: none outside none;
+            float: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            width: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background: #f36;
+            color: green;
+            margin-right: 5px;
+        }
+        /* id选择器 */
+        
+        #first {
+            background: lime;
+            color: #000;
+        }
+        
+        #last {
+            background: #000;
+            color: lime;
+        }
+        /* 类选择器 */
+        /* 类选择器在一个页面中可有多个相同类名，而ID选择器其ID值在整个页面中是唯一的一个 */
+        /* IE6选择器并不支持多类名选择器，其将以末尾类名为准。 */
+        
+        .item {
+            background: green;
+            color: #fff;
+            font-weight: bold;
+        }
+        /* 多类名选择器,如要匹配元素，则匹配的标签要包含这多个类 */
+        
+        .item.important {
+            background: red;
+        }
+        /* 带有标签的类名选择器，只匹配标签的类 */
+        
+        li.active {
+            background: lawngreen;
+        }
+        /* 群组选择器：将具有相同样式的元素分组在一起 */
+        
+        .clearfix:after,
+        .clearfix:before {
+            display: table;
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="clearfix demo">
+        <li class="first" id="first">1</li>
+        <li class="active">2</li>
+        <li class="important item">3</li>
+        <li class="important">4</li>
+        <li class="item">5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li class="last" id="last">10</li>
+    </ul>
+</body>
+
+</html>

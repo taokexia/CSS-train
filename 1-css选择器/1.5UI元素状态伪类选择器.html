@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI状态伪类选择器</title>
+    <style type="text/css">
+        /* 表单元素获得焦点效果 */
+        
+        input[type="text"]:focus {
+            border-color: rgba(0, 0, 0, 0.075);
+            outline: 0;
+            outline: thin dotted \9;
+        }
+        
+        input[disabled]
+        /* 等效于input:disabled */
+        
+        {
+            cursor: not-allowed;
+            background-color: #eee;
+            border-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" disabled>
+    </form>
+</body>
+
+</html>

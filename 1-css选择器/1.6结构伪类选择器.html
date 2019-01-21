@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构伪类选择器的使用</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            margin: 50px auto;
+            width: 400px;
+            list-style: none outside none;
+        }
+        
+        li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            font: bold 30px/50px arial;
+            background: #000;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+        }
+        /* 选择某个元素第一个子元素 */
+        
+        ul>li:first-child {
+            /* 等价于ul>li.first */
+            background-color: green;
+        }
+        /* 选择某个元素最后一个子元素 */
+        
+        ul>li:last-child {
+            background-color: blue;
+        }
+        /* 定位某个父元素的一个或多个特定的子元素 */
+        
+        ul>li:nth-child(3) {
+            /* 3指的是父元素的第3个子元素，如果第3个子元素不是li，则效果不会实现 */
+            background-color: yellow;
+        }
+        /* 定位某个父元素的偶数项子元素 */
+        
+        ul>li:nth-child(2n) {
+            /* 等价于 ul>li:nth-child(even) */
+            background-color: blue;
+        }
+        /* 定位某个父元素的奇数项子元素 */
+        
+        ul>li:nth-child(2n+1) {
+            /* 等价于 ul>li:nth-child(odd) */
+            background-color: blue;
+        }
+        /* 从父元素中的第5个元素开始选择,从第5个元素到最后一个元素 */
+        
+        ul>li:nth-child(n+5) {
+            /* ul>li:nth-child(-n+5) 表示从第1个元素到第5个元素*/
+            background-color: aqua;
+        }
+        /* 实现某父元素的子元素每隔几选一 */
+        
+        ul>li:nth-child(4n+1) {
+            background-color: bisque;
+        }
+        /* 从某父元素最后一个子元素开始计算选择特定的元素 */
+        
+        ul>li:nth-last-child(4) {
+            background-color: brown;
+        }
+        /* 计算父元素中某种特定类型的子元素 */
+        
+        ul>li:nth-of-type(3) {
+            /* 只计算li元素，如果有其他元素，不进行计算 */
+            background-color: orange;
+        }
+        /* 
+            first-of-type和last-of-type类似于first-child和last-child 
+            不同的是制定了元素的类型。
+        */
+        /* 
+            only-child:表示一个元素是它父元素的唯一元素,匹配元素的父元素中仅有一个子元素
+            only-of-type:选择一个元素是它的父元素的唯一一个相同类型的子元素
+            empty:用来选择没有任何内容的元素
+         */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+    </ul>
+</body>
+
+</html>

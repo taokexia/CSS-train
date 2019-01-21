@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+    <style>
+        /* 
+            ::first-letter 第一个字母
+            ::first-line 第一行
+            ::before 不是指存在于标记中的内容，而是可以插入额外内容的位置
+            ::after
+            ::selection 用来匹配突出显示的文本
+         */
+        
+        p:first-child::first-letter {
+            float: left;
+            color: #903;
+            padding: 4px 8px 0 3px;
+            font: 75px/60px Georgia;
+        }
+        
+        p:last-child::first-line {
+            font: italic 16px/18px Georgia;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam. Commodi sapiente enim modi hic aliquam quidem omnis vero numquam officia. Provident aperiam nemo perferendis dignissimos aliquid repudiandae nam dicta, temporibus sed vitae nulla,
+        culpa ut itaque. Fugiat, voluptate odio?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores magnam accusamus dignissimos voluptatum in voluptas tempora fugiat commodi quod? Error dolores nisi soluta provident vel volupt atibus eaque aut cumque quae repudiandae. Laborum dolore,
+        ipsa fugiat harum aliquam perspiciatis voluptate fugit!</p>
+</body>
+
+</html>

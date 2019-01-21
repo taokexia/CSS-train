@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器的使用</title>
+    <style>
+        .demo {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        
+        .demo a {
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: #aac;
+            color: blue;
+            font: bold 20px/50px Arial;
+            margin-right: 5px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        /* 
+            E[attr=val]属性选择器
+            属性和属性值必须完全匹配
+         */
+        
+        a[id=first] {
+            background-color: red;
+        }
+        /* 
+            E[attr|=val] 属性选择器：特定属性选择，attr等于val或以val-开头的字符串属性元素 
+            E[attr~=val] 属性选择器：根据元素属性值中的词列表某个词匹配需要的元素
+            E[attr*=val] 属性选择器：使用了通配符，只要所选元素中包含了val字符串，就会被匹配
+            E[attr^=val] 属性选择器: 匹配以val开头的所有元素
+            E[attr$=val] 属性选择器: 匹配以val结尾的所有元素
+        */
+        
+        a[lang|=zh] {
+            background-color: yellow;
+        }
+        
+        a[title~=website] {
+            background-color: pink;
+        }
+        
+        a[class*=links] {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <a href="#" id="first">1</a>
+        <a href="#" lang="zh">2</a>
+        <a href="#" lang="zh-cn">3</a>
+        <a href="#" title="test website">4</a>
+        <a href="#" title="website link">5</a>
+        <!-- 没有生效 attr~=val -->
+        <a href="#" title="open thewebsite">6</a>
+        <a href="#" class="ssdlinksl">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+    </div>
+</body>
+
+</html>
