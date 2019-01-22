@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-radisu属性</title>
+    <style>
+        /* border-radius: none | <length> {1, 4} [/<length> {1, 4}] ? */
+        /* / 前面的值设置元素圆角的水平方向半价，后面设置元素圆角垂直方向半径 */
+        /* 
+            border-radius有内半径和外半径的区别，元素边框值较大时，效果很明显。 
+            当border-radius半径值小于或等于border厚度时，元素边框内部就不具有圆角效果
+            border-radius内边半径等于外边半径减去对应边框宽度
+        */
+        
+        .border-radius {
+            width: 350px;
+            height: 100px;
+            border: 20px solid orange;
+            border-radius: 35px;
+        }
+        
+        .border-radius-1 {
+            margin: 10px;
+            width: 350px;
+            height: 100px;
+            border: 35px solid orange;
+            border-radius: 35px;
+        }
+        
+        table {
+            margin: 10px;
+            border: 5px solid orange;
+            border-radius: 10px;
+        }
+        
+        .table1 {
+            border-collapse: collapse;
+        }
+        
+        .table2 {
+            /* border-collpase属性值为separate时才会正常显示圆角 */
+            border-collapse: separate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-radius"></div>
+    <div class="border-radius-1"></div>
+    <table class="table1">
+        <tr>
+            <td>border-collapse:collapse</td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>border-collapse:separate</td>
+        </tr>
+    </table>
+</body>
+
+</html>

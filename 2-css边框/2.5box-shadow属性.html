@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-shadow属性</title>
+    <style>
+        /* box-shadow: none | [<length> <length> <length>?<length>? || <color>] [<length> <length> <length>? <length>? || <color>]+ */
+        /* 等价于 */
+        /* box-shadow: none | [inset x-offset y-offset blur-radius spread-radius color], [inset x-offset y-offset blur-radius spread-radius color] */
+        /* inset 阴影类型,可选值， inset设置内阴影 */
+        /* blur-radius 阴影模糊半径，可选参数 */
+        /* spread-radius 阴影扩展半径,可选参数 */
+        
+        .box-shadow {
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+        /* 5px 是模糊半径, -3是扩展半径 */
+        
+        .top {
+            box-shadow: 0 -4px 5px -3px red;
+        }
+        
+        .right {
+            box-shadow: 4px 0 5px -3px green;
+        }
+        
+        .bottom {
+            box-shadow: 0 4px 5px -3px blue;
+        }
+        
+        .left {
+            box-shadow: -4px 0 5px -3px orange;
+        }
+        
+        .box-shadow-1 {
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: inset 3px 3px 10px #06c;
+        }
+        /* 多层阴影效果 */
+        
+        .box-shadow-2 {
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: -5px 0 5px red, 0 5px 5px blue, 5px 0 5px green, 0 -5px 5px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-shadow top"></div>
+    <div class="box-shadow right"></div>
+    <div class="box-shadow bottom"></div>
+    <div class="box-shadow left"></div>
+    <div class="box-shadow-1"></div>
+    <div class="box-shadow-2"></div>
+</body>
+
+</html>

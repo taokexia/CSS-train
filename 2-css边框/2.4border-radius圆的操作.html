@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-radius圆</title>
+    <style>
+        /* 圆 */
+        
+        .radius {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        /* 半圆 */
+        
+        .semicircle {
+            background-color: orange;
+            margin: 30px;
+        }
+        
+        .top {
+            /* 宽度为高度2倍 */
+            width: 100px;
+            height: 50px;
+            /* 圆角半径为高度的值 */
+            border-radius: 50px 50px 0 0;
+        }
+        
+        .right {
+            /* 高度为宽度2倍 */
+            width: 50px;
+            height: 100px;
+            /* 圆角半径为高度的值 */
+            border-radius: 0 50px 50px 0;
+        }
+        
+        .bottom {
+            /* 宽度为高度2倍 */
+            width: 100px;
+            height: 50px;
+            /* 圆角半径为高度的值 */
+            border-radius: 0 0 50px 50px;
+        }
+        
+        .left {
+            /* 高度为宽度2倍 */
+            width: 50px;
+            height: 100px;
+            /* 圆角半径为高度的值 */
+            border-radius: 50px 0 0 50px;
+        }
+        /* 扇形 */
+        
+        .quarterCircle {
+            background-color: orange;
+            margin: 30px;
+        }
+        
+        .quarterCircle-top {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px 0 0 0;
+        }
+        
+        .quarterCircle-right {
+            width: 100px;
+            height: 100px;
+            border-radius: 0 100px 0 0;
+        }
+        
+        .quarterCircle-bottom {
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 100px 0;
+        }
+        
+        .quarterCircle-left {
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100px;
+        }
+        /* 椭圆 */
+        
+        .oval {
+            background-color: orange;
+            margin: 30px;
+        }
+        
+        .hov {
+            width: 100px;
+            height: 50px;
+            border-radius: 100px / 50px;
+        }
+        
+        .ver {
+            width: 50px;
+            height: 100px;
+            border-radius: 50px / 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="radius"></div>
+    <div class="semicircle top"></div>
+    <div class="semicircle right"></div>
+    <div class="semicircle bottom"></div>
+    <div class="semicircle left"></div>
+    <div class="quarterCircle quarterCircle-top"></div>
+    <div class="quarterCircle quarterCircle-right"></div>
+    <div class="quarterCircle quarterCircle-bottom"></div>
+    <div class="quarterCircle quarterCircle-left"></div>
+    <div class="oval hov"></div>
+    <div class="oval ver"></div>
+</body>
+
+</html>

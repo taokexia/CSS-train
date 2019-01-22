@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-image效果</title>
+    <style>
+        /* border-image可以拆分为下面属性： */
+        /* border-image-source: url(image url)*/
+        /* border-image-slice:[<number> | <percentage>] {1, 4} && fill */
+        /* border-image-width:[<length> | <percentage | <number> | auto] {1, 4} */
+        /* border-image-repeat:[stretch | repeat | round] {1, 2}*/
+        
+        .border-image-round {
+            width: 150px;
+            height: 100px;
+            border: 27px solid;
+            border-image: url(border.jpg) 30 round stretch;
+            -webkit-border-image: url(border.png) 30 round stretch;
+            /* 水平round效果 */
+        }
+        
+        .border-image-repeat {
+            width: 150px;
+            height: 100px;
+            border: 27px solid;
+            border-image: url(border.jpg) 30 repeat stretch;
+            -webkit-border-image: url(border.png) 30 repeat stretch;
+            /* 水平repeat效果 */
+        }
+        
+        .border-image-stretch {
+            width: 150px;
+            height: 100px;
+            border: 27px solid;
+            border-image: url(border.jpg) 30 stretch stretch;
+            -webkit-border-image: url(border.png) 30 stretch stretch;
+            /* 水平stretch效果 */
+        }
+        
+        .border-image-vertical-round {
+            width: 150px;
+            height: 100px;
+            border: 27px solid;
+            border-image: url(border.jpg) 30 stretch round;
+            -webkit-border-image: url(border.png) 30 stretch round;
+            /* 垂直round效果 */
+        }
+        
+        .border-image-vertical-repeat {
+            width: 150px;
+            height: 100px;
+            border: 27px solid;
+            border-image: url(border.jpg) 30 stretch repeat;
+            -webkit-border-image: url(border.png) 30 stretch repeat;
+            /* 垂直repeat效果 */
+        }
+        
+        .border-image-btn {
+            display: inline-block;
+            border: 18px solid green;
+            border-width: 0 18px;
+            border-image: url(button_sprite.png) 0 18 50 18;
+            -webkit-border-image: url(button_sprite.png) 0 18 50 18;
+            padding: 13px 10px 17px;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            line-height: 15px;
+            margin: 10px;
+        }
+        
+        .border-image-btn:hover {
+            border-image: url(button_sprite.png) 50 18 0 18;
+            -webkit-border-image: url(button_sprite.png) 50 18 0 18;
+            color: #000;
+            border-color: yellow;
+            text-decoration: none;
+        }
+        
+        .border-image-drop-boxshadow {
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-width: 7px 7px 16px;
+            border-image: url(border-image-box-shadow.png) 7 7 16 7;
+            -webkit-border-image: url(border-image-box-shadow.png) 7 7 16 7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-image-round"></div>
+    <div class="border-image-repeat"></div>
+    <div class="border-image-stretch"></div>
+    <div class="border-image-vertical-round"></div>
+    <div class="border-image-vertical-repeat"></div>
+    <a href="#" class="border-image-btn">ClickMe!</a>
+    <div class="border-image-drop-boxshadow box1">小框</div>
+</body>
+
+</html>
