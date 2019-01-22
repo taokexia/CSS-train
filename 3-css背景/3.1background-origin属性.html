@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background属性</title>
+    <style>
+        /* background: [<background-color>] [,<background-image>] [,<background-repeat>] [,<background-attachment>] [,<background-position>] */
+        /* background-color: transparent || <color> */
+        /* background-image: none || <url> */
+        /* background-repeat: repeat || repeat-x || repeat-y || no-repeat */
+        /* background-attachment: scroll || fixed */
+        /* background-position: <percentage> || <length> || [left|center|right] [,top|center|bottom] */
+        /* background-origin: padding || border || content */
+        /* 在新版本的浏览器下 */
+        /* background-origin: padding-box || border-box || content-box */
+        
+        div {
+            width: 300px;
+            height: 200px;
+            border: 20px dashed rgba(0, 0, 0, 0.3);
+            background: orange url(bg.png) no-repeat left top;
+            padding: 20px;
+            margin: 30px;
+        }
+        
+        .padding-box {
+            -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+        }
+        
+        .border-box {
+            -webkit-background-origin: border-box;
+            background-origin: border-box;
+        }
+        
+        .content-box {
+            -webkit-background-origin: content-box;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="padding-box"></div>
+    <div class="border-box"></div>
+    <div class="content-box"></div>
+</body>
+
+</html>

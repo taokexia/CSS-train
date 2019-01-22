@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-size属性</title>
+    <style>
+        /* background-size: auto || <length> || <percentage> || cover || contain */
+        
+        div {
+            width: 320px;
+            height: 270px;
+            border: 1px solid red;
+            background: url(bg.jpg) no-repeat;
+        }
+        
+        .auto {
+            background-size: auto;
+        }
+        
+        .size {
+            background-size: 280px 200px;
+        }
+        
+        .size-1 {
+            background-size: 50% 50%;
+        }
+        
+        .cover {
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .contain {
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auto"></div>
+    <div class="size"></div>
+    <div class="size-1"></div>
+    <div class="cover">cover</div>
+    <div class="contain"></div>
+</body>
+
+</html>
