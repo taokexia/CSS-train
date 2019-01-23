@@ -19,3 +19,22 @@
 4. [border-radius圆的操作](./2-css边框/2.4border-radius圆的操作.html)
 5. [border-shadow属性](./2-css边框/2.5box-shadow属性.html)
 6. [制作3D搜索表单](./2-css边框/2.5box-shadow属性.html)
+
+## 3.CSS背景
+1. [background-origin属性](./3-css背景/3.1background-origin属性.html)
+2. [background-clip属性](./3-css背景/3.2background-clip属性.html)
+3. [background-size属性](./3-css背景/3.3background-size属性.html)
+4. [多背景制作花边框](./3-css背景/3.4多背景制作花边框.html)
+
+## 4.CSS文本
+1. [text-shadow属性](./4-css文本/4.1text-shadow属性.html)
+2. [text-overflow属性](./4-css文本/4.2text-overflow属性.html)
+3. [word-wrap属性](./4-css文本/4.3word-wrap属性.html)
+4. [word-break属性](./4-css文本/4.4word-break属性.html)
+5. [white-space属性](./4-css文本/4.5white-space属性.html)
+
+## 5.CSS色彩
+1. [opacity属性](./5-css色彩/5.1opacity属性.html)
+2. [RGBA色彩模式](./5-css色彩/5.2RGBA色彩模式.html)
+3. [HSL颜色模式](./5-css色彩/5.3HSL颜色模式.html)
+4. [HSLA颜色模式](./5-css色彩/5.4HSLA颜色模式.html)
