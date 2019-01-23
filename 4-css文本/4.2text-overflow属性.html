@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text属性</title>
+    <style>
+        /* text-overflow: clip | ellipsis */
+        /* clip: 不显示省略标记，只是简单的裁切 */
+        /* ellipsis 文本溢出时显示省略标记，省略标记插入的位置在最后一个字符 */
+        /* ellipsis 还需要两个属性配合：强制文本一行显示(white-space:nowrap) */
+        /* 溢出内容隐藏overflow:hidden */
+        
+        .text-overflow-clip {
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-overflow: clip;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .text-overflow-ellipsis {
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-overflow-clip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, facere!</div>
+    <div class="text-overflow-ellipsis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque officiis labore rerum suscipit, dolorem incidunt enim itaque ea voluptatibus minus?</div>
+</body>
+
+</html>

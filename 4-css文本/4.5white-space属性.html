@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>white-space属性</title>
+    <style>
+        /* white-space: normal || pre || nowwrap || pre-line || pre-wrap || inherit */
+        /* normal: 空白处会被浏览器忽略 */
+        /* pre：空白处会被浏览器扣留，类似html<pre>效果 */
+        /* nowrap: 文本不会换行，知道遇到<br> */
+        /* pre-wrap: 会保留文本之间的空白符和换行符 */
+        /* pre-line: 合并空白符序列 */
+        /* inherit：继承父元素的white-space属性 */
+        /* pre 表情自动换行 */
+        
+        pre {
+            white-space: pre;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        /* 单元格td换行 */
+        
+        table {
+            table-layout: fixed;
+            width: 100 px;
+        }
+        
+        table td {
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        /* 除pre td标签外其他标签自动换行 */
+        
+        element {
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        /* 强制不换行 */
+        
+        element {
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

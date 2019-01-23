@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word-break属性</title>
+    <style>
+        /* word-break: normal | break-all | keep-all */
+        /* normal：根据语言自己规则换行 */
+        /* break-all: 可以强行截断英文单词，达到词内换行效果 */
+        /* keep-all 不允许字断开。 */
+        
+        div {
+            width: 150px;
+            margin: 10px;
+            font-size: 16px;
+            font-family: simsun;
+            border: 1px solid #ccc;
+        }
+        
+        .break {
+            word-break: break-all;
+        }
+        
+        .keep {
+            word-break: keep-all;
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <div class="break">我是测试文本主，全部是中文，没有任何英文，主要是用来测试作用，看看效果而以。</div>
+    <div class="break">W3CPLUS是一个前端爱好者的家园，W3CPLUS努力打造最优秀的web前端学习的站点。W3CPLUS力求原创，以一起学习，一起进步，共同分享为原则。</div>
+    <div class="break">W3CPLUS is a front end lover's home, W3CPLUS to create the best webmobile mutual encouragement.</div>
+    <div class="break">Use the URL:http://www.w3cplus.com/css/using_transparency_in_web_design_dos_and_donts.html,to test. and user the text:sssssssssssssssssssssssssssssssstestesssssssssssssdtestsadasfsatesssssssssssdstewsdfa and number:78895482852268123356463345663214524543123464215646321467436143167431316464313464643134646431464
+        to test. </div>
+
+    <div class="keep">我是测试文本主，全部是中文，没有任何英文，主要是用来测试作用，看看效果而以。</div>
+    <div class="keep">W3CPLUS是一个前端爱好者的家园，W3CPLUS努力打造最优秀的web前端学习的站点。W3CPLUS力求原创，以一起学习，一起进步，共同分享为原则。</div>
+    <div class="keep">W3CPLUS is a front end lover's home, W3CPLUS to create the best webmobile mutual encouragement.</div>
+    <div class="keep">Use the URL:http://www.w3cplus.com/css/using_transparency_in_web_design_dos_and_donts.html,to test. and user the text:sssssssssssssssssssssssssssssssstestesssssssssssssdtestsadasfsatesssssssssssdstewsdfa and number:78895482852268123356463345663214524543123464215646321467436143167431316464313464643134646431464
+        to test. </div>
+
+</body>
+
+</html>
