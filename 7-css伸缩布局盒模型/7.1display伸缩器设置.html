@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display伸缩器设置</title>
+    <style>
+        /* display: box | inline-box */
+        /* box: 设置为块伸缩器 */
+        /* inline-box: 设置为内联级伸缩容器 */
+        /* 浮动无法影响伸缩容器，而且伸缩容器margin与其内容的margin不会重叠 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body>div {
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        div>div {
+            border: 1px solid #f36;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        .box {
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+        }
+        
+        .inline-box {
+            display: -moz-inline-box;
+            display: -webkit-inline-box;
+            display: inline-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="inline-box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+
+</html>

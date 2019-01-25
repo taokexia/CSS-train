@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改文本域随意调整大小的功能</title>
+    <style>
+        /* overflow-x: visible | hidden | scroll | auto | no-display | no-content */
+        /* visible: 默认值,表示不剪切容器中任何内容，不添加滚动条，clip设置失效 */
+        /* auto: 当内容溢出时自动添加滚动条 */
+        /* hidden： 内容溢出时隐藏内容 */
+        /* scroll: 不管有没有溢出，都显示滚动条 */
+        /* no-display: 内容溢出容器时不显示元素，类似于display:none */
+        /* no-content: 内容溢出容器时不显示内容，类似于visibility:hidden */
+        /* resize: none | both | horizontal | vertical | inherit */
+        /* none: 用户不能拖动元素修改尺寸 */
+        /* both：可以拖动修改尺寸 */
+        /* horizontal: 仅可修改元素的宽度 */
+        /* vertical: 仅可修改元素的高度 */
+        /* inherit: 继承父元素 */
+        
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <textarea name="test" rows="10" cols="30" placeholder="修改文本域随意调整大小的功能"></textarea>
+    </form>
+</body>
+
+</html>

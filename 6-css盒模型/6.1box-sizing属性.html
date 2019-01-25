@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-sizing属性</title>
+    <style>
+        /* W3C标准盒模型 */
+        /* 外盒尺寸计算(元素空间尺寸)：element空间高度 = 内容高度 + 内距 + 边框 + 外距 */
+        /* 内盒尺寸计算(元素大小)：element高度 = 内容高度 + 内距 + 边框(height 为内容高度) */
+        /* IE传统盒模型 */
+        /* 外盒尺寸计算(元素空间尺寸)：element空间高度 = 内容高度 + 外距 */
+        /* 内盒尺寸计算(元素大小)：element高度 = 内容高度(height 包含了内容宽度、边框、内距) */
+        /* box-sizing: content-box | border-box | inherit */
+        /* content-box:w3c标准盒模式，默认值element width/height = border + padding + content width/height */
+        /* border-box: 维持IE传统盒模型： element width/height = content width/height - padding - border */
+        /* inherit: 继承父元素 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        #header {
+            height: 100px;
+            background: #38382e;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar {
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            height: 300px;
+            background: #5d33cf;
+        }
+        
+        .content {
+            float: left;
+            width: 720px;
+            height: 300px;
+            background: #c8ca30;
+            margin-bottom: 10px;
+        }
+        
+        #footer {
+            background: #cc4ad5;
+            height: 100px;
+            text-align: center;
+            /* 清除浮动 */
+            clear: both;
+        }
+        /* 使用box-sizing */
+        
+        #box-header {
+            height: 100px;
+            background: #38382e;
+            margin-bottom: 10px;
+            border: 10px solid red;
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .box-sidebar {
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            height: 300px;
+            background: #5d33cf;
+            border: 10px solid red;
+            padding: 10px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .box-content {
+            float: left;
+            width: 720px;
+            height: 300px;
+            background: #c8ca30;
+            margin-bottom: 10px;
+            border: 10px solid red;
+            padding: 10px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        #box-footer {
+            background: #cc4ad5;
+            height: 100px;
+            text-align: center;
+            clear: both;
+            border: 10px solid red;
+            padding: 10px;
+            width: 100%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header">页眉</div>
+        <div class="sidebar">侧边栏</div>
+        <div class="content">主内容</div>
+        <div id="footer">页脚</div>
+    </div>
+    <div class="wrapper">
+        <div id="box-header">页眉</div>
+        <div class="box-sidebar">侧边栏</div>
+        <div class="box-content">主内容</div>
+        <div id="box-footer">页脚</div>
+    </div>
+</body>
+
+</html>

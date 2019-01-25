@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>outline属性</title>
+    <style>
+        /* outline: [outline-color] || [outline-style] || [outline-width] || [outline-offset] || inherit */
+        /* outline-color:定义边框线颜色 */
+        /* outline-style:定义轮廓线样式 */
+        /* outline-width:定义轮廓线宽度 */
+        /* outline-offset:定义轮廓线的偏移位置的数值，可以取负值 */
+        /* inherit:继承父元素的效果 */
+        /* 与border相似，但border属于盒模型的一部分，影响盒大小，outline不会影响文档流，也不会破坏布局 */
+        /* outline轮廓线在元素各边都一样，不能独自设置 */
+        /* outline创建轮廓线始终是闭合的 */
+        /* outline创建的外轮廓线可能是非矩形的，可以包裹多边形，border不可以 */
+        /* border仅能向外扩展，outline可通过设置outline-offset的值，向外部或元素内部创建封闭的轮廓 */
+        
+        div {
+            width: 200px;
+            margin: 20px auto;
+            outline: 10px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>outline模仿边框效果</div>
+</body>
+
+</html>

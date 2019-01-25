@@ -38,3 +38,26 @@
 2. [RGBA色彩模式](./5-css色彩/5.2RGBA色彩模式.html)
 3. [HSL颜色模式](./5-css色彩/5.3HSL颜色模式.html)
 4. [HSLA颜色模式](./5-css色彩/5.4HSLA颜色模式.html)
+
+## 6.CSS盒模型
+1. [box-sizing属性](./6-css盒模型/6.1box-sizing属性.html)
+2. [resize属性](./6-css盒模型/6.2resize属性.html)
+3. [outline属性](./6-css盒模型/6.3outline属性.html)
+
+## 7.CSS伸缩布局盒模型
+1. [display伸缩器设置](./7-css伸缩布局盒模型/7.1display伸缩器设置.html)
+2. [box-orient属性](./7-css伸缩布局盒模型/7.2box-orient属性.html)
+3. [box-direction属性](./7-css伸缩布局盒模型/7.3box-direction属性.html)
+4. [box-lines属性](./7-css伸缩布局盒模型/7.4box-lines属性.html)
+5. [box-pack属性](./7-css伸缩布局盒模型/7.5box-pack属性.html)
+6. [box-align属性](./7-css伸缩布局盒模型/7.6box-align属性.html)
+7. [box-flex属性](./7-css伸缩布局盒模型/7.7box-flex属性.html)
+8. [box-ordinal-group属性](./7-css伸缩布局盒模型/7.8box-ordinal-group属性.html)
+9. [box制作自适应的三列布局](./7-css伸缩布局盒模型/7.9box制作自适应的三列布局.html)
+10. [flex-direction属性](./7-css伸缩布局盒模型/7.10flex-direction属性)
+11. [flex-wrap属性](./7-css伸缩布局盒模型/7.11flex-wrap属性.html)
+12. [flex-flow属性](./7-css伸缩布局盒模型/7.12flex-flow属性.html)
+13. [justify-content属性](./7-css伸缩布局盒模型/7.13justify-content属性.html)
+14. [align-items属性](./7-css伸缩布局盒模型/7.14align-items属性.html)
+15. [flex属性](./7-css伸缩布局盒模型/7.15flex属性.html)
+16. [order属性](./7-css伸缩布局盒模型/7.16order属性.html)

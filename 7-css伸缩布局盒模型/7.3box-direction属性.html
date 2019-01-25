@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-direction属性</title>
+    <style>
+        /* box-direction: normal | reverse */
+        /* reverse: 反向显示 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body>div {
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+        
+        div>div {
+            border: 1px solid #f36;
+            padding: 10px;
+        }
+        
+        .box {
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+        }
+        
+        .box-horizontal {
+            -moz-box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+            width: 250px;
+        }
+        
+        .box-vertical {
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            height: 250px;
+        }
+        
+        .box-direction-reverse {
+            -moz-box-direction: reverse;
+            -webkit-box-direction: reverse;
+            box-direction: reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box-horizontal">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="box box-horizontal box-direction-reverse">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    <div class="box box-vertical">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    <div class="box box-vertical box-direction-reverse">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+
+</html>

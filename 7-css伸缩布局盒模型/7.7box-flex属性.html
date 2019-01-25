@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-flex属性</title>
+    <style>
+        /* box-flex: <number> */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        .box-flex {
+            width: 960px;
+            background: gray;
+            margin: 100px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+        }
+        
+        .box-flex p:first-child {
+            background: green;
+        }
+        
+        .box-flex p:last-child {
+            background: orange;
+        }
+        
+        .one {
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            box-flex: 1;
+        }
+        
+        .two {
+            background: orange;
+            -moz-box-flex: 2;
+            -webkit-box-flex: 2;
+            box-flex: 2;
+        }
+        
+        .box-flex-2 {
+            width: 410px;
+            border: 1px solid red;
+            background: gray;
+            margin: 100px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+        }
+        
+        .box-flex-2 p:first-child {
+            background: green;
+        }
+        
+        .box-flex-2 p:last-child {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-flex">
+        <p>我是一个绿色的伸缩项目。</p>
+        <p>我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+    <div class="box-flex">
+        <p class="one">我是一个绿色的伸缩项目。</p>
+        <p class="one">我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+    <div class="box-flex">
+        <p class="one">我是一个绿色的伸缩项目。</p>
+        <p class="two">我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+    <div class="box-flex-2">
+        <p>我是一个绿色的伸缩项目。</p>
+        <p>我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+    <div class="box-flex-2">
+        <p class="one">我是一个绿色的伸缩项目。</p>
+        <p class="one">我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+    <div class="box-flex-2">
+        <p class="one">我是一个绿色的伸缩项目。</p>
+        <p class="two">我是一个橙色的伸缩项目，我是用来测试box-flex的使用。</p>
+    </div>
+</body>
+
+</html>

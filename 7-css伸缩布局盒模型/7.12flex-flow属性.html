@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-flow属性</title>
+    <style>
+        /* flex-flow: <flex-direction> | <flex-wrap> */
+        /* <flex-direction>  用来设置伸缩容器的伸缩流方向 */
+        /* <flex-wrap> 用来设置伸缩容器是否换行排列 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .flexbox-container {
+            padding: 10px;
+            border: 1px solid hsla(120, 30%, 50%, 0.8);
+            margin: 50px;
+            background-color: hsla(10, 80%, 10%, 0.2);
+        }
+        
+        .flexbox-container>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid hsla(120, 30%, 50%, 0.8);
+            margin: 5px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .flexbox-container>div:nth-child(1) {
+            background-color: hsla(120, 30%, 50%, 0.8);
+        }
+        
+        .flexbox-container>div:nth-child(2) {
+            background-color: hsla(120, 30%, 10%, 0.8);
+        }
+        
+        .flexbox-container>div:nth-child(3) {
+            background-color: hsla(20, 30%, 50%, 0.8);
+        }
+        
+        .flexbox-container>div:nth-child(4) {
+            background-color: hsla(20, 80%, 50%, 0.8);
+        }
+        
+        .flexbox-container>div:nth-child(5) {
+            background-color: hsla(320, 80%, 50%, 0.8);
+        }
+        
+        .flexbox-container>div:nth-child(6) {
+            background-color: hsla(320, 80%, 80%, 0.8);
+        }
+        /*声明伸缩容器*/
+        
+        .flexbox-container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>Box4</div>
+        <div>Box5</div>
+        <div>Box6</div>
+    </div>
+</body>
+
+</html>
